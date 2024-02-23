@@ -8,6 +8,9 @@ public class Logic {
 
     public ObservableList employeeList(){
         return employeeDao.getEmployeeList();
+    }
 
+    public void deleteEmployee(int Id){
+        employeeDao.deleteEmployee(Id);
     }
 }

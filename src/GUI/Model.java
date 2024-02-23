@@ -9,4 +9,8 @@ public class Model {
     public ObservableList employeeList(){
         return logic.employeeList();
     }
+
+    public void deleteEmployee(int Id){
+        logic.deleteEmployee(Id);
+    }
 }
