@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="619.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ViewController">
+   <children>
+      <TableView fx:id="employeeTable" layoutX="75.0" layoutY="60.0" prefHeight="500.0" prefWidth="550.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="56.0" text="Id" />
+          <TableColumn fx:id="nameColumn" prefWidth="145.0" text="Name" />
+            <TableColumn fx:id="salaryColumn" prefWidth="103.0" text="Salary" />
+            <TableColumn fx:id="onLeaveColumn" prefWidth="87.0" text="On Leave" />
+            <TableColumn fx:id="phoneNumberColumn" minWidth="7.0" prefWidth="166.0" text="Phone Number" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchField" layoutX="464.0" layoutY="20.0" />
+   </children>
+</AnchorPane>
