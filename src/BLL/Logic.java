@@ -1,5 +1,6 @@
 package BLL;
 
+import BE.Employee;
 import DAL.EmployeeDAO;
 import javafx.collections.ObservableList;
 
@@ -8,6 +9,9 @@ public class Logic {
 
     public ObservableList employeeList(){
         return employeeDao.getEmployeeList();
+    }
+    public void createEmployee(Employee em){
+        employeeDao.createEmployee(em);
     }
 
     public void deleteEmployee(int Id){

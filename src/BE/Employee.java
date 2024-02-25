@@ -1,60 +1,67 @@
 package BE;
 
 public class Employee {
-    private int Id;
-    private String Name;
-    private double Salary;
-    private boolean OnLeave;
-    private String PhoneNumber;
+    private int id;
+    private String name;
+    private double salary;
+    private boolean onLeave;
+    private String phoneNumber;
+
+    public Employee(String name, double salary, boolean onLeave, String phoneNumber) {
+        this.name = name;
+        this.salary = salary;
+        this.onLeave = onLeave;
+        this.phoneNumber = phoneNumber;
+    }
 
     public int getId() {
-        return Id;
+        return id;
     }
 
     public void setId(int id) {
-        Id = id;
+        id = id;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        name = name;
     }
 
     public double getSalary() {
-        return Salary;
+        return salary;
     }
 
     public void setSalary(double salary) {
-        Salary = salary;
+        salary = salary;
     }
 
     public boolean isOnLeave() {
-        return OnLeave;
+        return onLeave;
     }
 
     public void setOnLeave(boolean onLeave) {
-        OnLeave = onLeave;
+        onLeave = onLeave;
     }
 
     public String getPhoneNumber() {
-        return PhoneNumber;
+        return phoneNumber;
     }
 
     public void setPhoneNumber(String phoneNumber) {
-        PhoneNumber = phoneNumber;
+        phoneNumber = phoneNumber;
     }
 
     @Override
     public String toString() {
         return "Employee{" +
-                "Id=" + Id +
-                ", Name='" + Name + '\'' +
-                ", Salary=" + Salary +
-                ", OnLeave=" + OnLeave +
-                ", PhoneNumber='" + PhoneNumber + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", salary=" + salary +
+                ", onLeave=" + onLeave +
+                ", phoneNumber='" + phoneNumber + '\'' +
                 '}';
     }
 }

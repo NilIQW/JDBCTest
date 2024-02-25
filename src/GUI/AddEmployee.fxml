@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="290.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AddEmployeeController">
+   <children>
+      <TextField fx:id="nameField" layoutX="14.0" layoutY="133.0" prefWidth="150.0" />
+      <TextField fx:id="salaryField" layoutX="182.0" layoutY="133.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="onLeaveChoicebox" layoutX="354.0" layoutY="133.0" prefHeight="25.0" prefWidth="92.0" />
+      <TextField fx:id="phoneNumberField" layoutX="471.0" layoutY="133.0" prefWidth="150.0" />
+      <Button layoutX="432.0" layoutY="240.0" mnemonicParsing="false" onAction="#addEmployee" prefHeight="25.0" prefWidth="116.0" text="Add Employee" />
+      <Button layoutX="564.0" layoutY="240.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+      <Label layoutX="14.0" layoutY="107.0" text="Name" />
+      <Label layoutX="182.0" layoutY="107.0" text="Salary" />
+      <Label layoutX="354.0" layoutY="107.0" text="On Leave" />
+      <Label layoutX="471.0" layoutY="107.0" text="Phone Number" />
+   </children>
+</AnchorPane>

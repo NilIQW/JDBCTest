@@ -1,3 +1,5 @@
+import GUI.AddEmployeeController;
+import GUI.Model;
 import GUI.ViewController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -16,6 +18,10 @@ public class Main extends Application {
                 getClass().getResource("./GUI/View.fxml"));
         Parent root = loader.load();
         ViewController viewController = loader.getController();
+        Model model = Model.getInstance();
+        AddEmployeeController addEmployeeController = new AddEmployeeController(model);
+        addEmployeeController.setEmployeeTable(viewController.getEmployeeTable());
+
 
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
